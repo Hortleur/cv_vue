@@ -1,25 +1,24 @@
 <template>
-<div class=" h-screen flex flex-col justify-between bg-gradient-to-br from-cvGreen to-cvBlueSlate">
-  <div id="nav" class=" p-5 text-cvLightLime font-bold text-lg">
-    <router-link to="/">Accueil</router-link> |
-    <router-link to="/skills">Competences</router-link> |
-    <router-link to="/exp">Experiences</router-link>
-  </div>
-  <router-view/>
-  <Footer>
+  <div
+    class="flex flex-col justify-between h-full bg-gradient-to-br from-cvGreen to-cvBlueSlate"
+  >
+    <div id="nav" class="p-5 text-cvLightLime font-bold text-lg">
+      <router-link to="/">Accueil</router-link> |
+      <router-link to="/skills">Competences</router-link> |
+      <router-link to="/exp">Experiences</router-link>
+    </div>
+    <router-view />
     <FooterVue />
-  </Footer>
-</div>
-  
+  </div>
 </template>
 
 <script>
 import FooterVue from "./components/Footer.vue";
 export default {
-  components:{
+  components: {
     FooterVue,
-  }
-}
+  },
+};
 </script>
 
 <style>
@@ -31,6 +30,6 @@ export default {
 }
 
 #nav a.router-link-exact-active {
-  color: #E19D56;
+  color: #e19d56;
 }
 </style>
