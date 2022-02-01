@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col min-h-screen">
-    <div class="flex flex-row justify-around my-auto">
+  <div class="flex flex-col h-screen">
+    <div class="flex flex-col justify-around my-auto lg:flex-row xl:flex-row">
       <div class="home flex-grow">
         <img
           alt="photo de profil"
@@ -10,7 +10,7 @@
         <h1 class="font-bold text-5xl mt-8 text-cvLightCyan">Kevin Brun</h1>
         <h2 class="font-bold text-4xl text-cvLightCyan">{{ getAge }} ans</h2>
       </div>
-      <div class="flex-1">
+      <div class="flex-1 lg:mr-12">
         <div>
           <h2 class="text-4xl text-cvLightLime mt-5">Présentation</h2>
           <div class="text-cvLightLime my-4">

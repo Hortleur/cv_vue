@@ -8,7 +8,7 @@
       <router-link to="/exp">Experiences</router-link>
     </div>
     <router-view />
-    <FooterVue />
+    <FooterVue class="" />
   </div>
 </template>
 
