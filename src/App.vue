@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col justify-between h-full bg-gradient-to-br from-cvGreen to-cvBlueSlate"
+    class="flex flex-col justify-between bg-gradient-to-br from-cvGreen to-cvBlueSlate h-full"
   >
     <div id="nav" class="p-5 text-cvLightLime font-bold text-lg">
       <router-link to="/">Accueil</router-link> |
@@ -8,7 +8,9 @@
       <router-link to="/exp">Experiences</router-link>
     </div>
     <router-view />
-    <FooterVue class="" />
+    <div>
+      <FooterVue class="mt-24" />
+    </div>
   </div>
 </template>
 
