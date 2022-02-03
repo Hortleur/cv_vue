@@ -1,0 +1,1 @@
+.slide-right{-webkit-animation:slide-right 2s forwards;animation:slide-right 2s forwards}@-webkit-keyframes slide-right{0%{transform:scaleX(0);transform-origin:0 0}to{transform:scaleX(1);transform-origin:0 0}}@keyframes slide-right{0%{transform:scaleX(0);transform-origin:0 0}to{transform:scaleX(1);transform-origin:0 0}}
