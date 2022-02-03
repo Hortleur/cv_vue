@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col h-screen">
+  <div class="flex flex-col h-full lg:h-screen">
     <div class="flex flex-col justify-around my-auto lg:flex-row xl:flex-row">
       <div class="home flex-grow">
         <img
@@ -28,12 +28,23 @@
             <li v-for="hobbie in hobbies" :key="hobbie.item">{{ hobbie.item }}</li>
           </ul>
         </div>
+        <div
+          class="mt-8 text-xl font-semibold bg-cvLightCyan w-1/2 mx-auto p-2 rounded hover:bg-cvLightLime"
+        >
+          <a
+            href="https://drive.google.com/file/d/1s-9O3mnbEvLFdGcSacjCsFVjrKiG-KHb/view?usp=sharing"
+            target="_blank"
+            >Télécharger mon cv en Pdf</a
+          >
+        </div>
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
+import Footer from "../components/Footer.vue";
 export default {
   name: "Home",
   data() {
@@ -51,6 +62,6 @@ export default {
       return age;
     },
   },
-  components: {},
+  components: { Footer },
 };
 </script>

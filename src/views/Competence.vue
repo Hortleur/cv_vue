@@ -4,23 +4,23 @@
       <button
         v-if="skills"
         @click="displayComp"
-        class="bg-yellow-100 p-3 rounded-lg text-4xl font-medium border-4 border-cvLightCyan hover:text-cvBorderorange hover:border-cvBorderorange hover:font-bold"
+        class="bg-yellow-100 p-3 rounded-lg text-2xl lg:text-4xl font-medium border-4 border-cvLightCyan hover:text-cvBorderorange hover:border-cvBorderorange hover:font-bold"
       >
-        Compétences
+        Compétences/Soft Skills
       </button>
       <button
         v-else
         @click="displayComp"
-        class="bg-yellow-100 p-3 rounded-lg text-4xl font-medium border-4 border-cvLightCyan hover:text-cvBorderorange hover:border-cvBorderorange hover:font-bold"
+        class="bg-yellow-100 p-3 rounded-lg text-2xl lg:text-4xl font-medium border-4 border-cvLightCyan hover:text-cvBorderorange hover:border-cvBorderorange hover:font-bold"
       >
-        Soft Skills
+        Soft Skills/Compétences
       </button>
     </div>
     <div
       v-if="competence"
-      class="flex flex-row flex-wrap justify-between items-center mt-4"
+      class="lg:flex lg:flex-row lg:flex-wrap lg:justify-between lg:items-center mt-4"
     >
-      <div v-for="comp in comps" :key="comp.id" class="w-1/3 mt-12">
+      <div v-for="comp in comps" :key="comp.id" class="lg:w-1/3 mt-12">
         <div
           class="flex flex-col items-center m-4 bg-cvLightCyan w-1/2 p-4 rounded-lg mx-auto"
         >
@@ -37,12 +37,15 @@
         </div>
       </div>
     </div>
-    <div v-if="skills" class="flex flex-row flex-wrap justify-between items-center mt-4">
-      <div v-for="skill in softSkills" :key="skill.id" class="w-1/3 mt-12">
+    <div
+      v-if="skills"
+      class="lg:flex lg:flex-row lg:flex-wrap lg:justify-between lg:items-center mt-4"
+    >
+      <div v-for="skill in softSkills" :key="skill.id" class="lg:w-1/3 mt-12">
         <div
           class="flex flex-col items-center m-4 bg-cvLightCyan w-1/2 p-4 rounded-lg mx-auto"
         >
-          <h2 class="text-2xl font-medium text-cvSlate">{{ skill.name }}</h2>
+          <h2 class="text-lg lg:text-2xl font-medium text-cvSlate">{{ skill.name }}</h2>
           <img :src="skill.emot" alt="émoji niveau" width="64" height="64" />
           <div class="h-8 w-full mt-2 rounded-2xl bg-gray-100">
             <div
@@ -55,9 +58,11 @@
         </div>
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 <script>
+import Footer from "../components/Footer.vue";
 export default {
   data() {
     return {
@@ -160,7 +165,7 @@ export default {
           id: 3,
           name: "Créativité",
           emot: require("../assets/1F630.svg"),
-          level: 40,
+          level: 50,
         },
         {
           id: 4,
@@ -201,6 +206,7 @@ export default {
       this.skills = !this.skills;
     },
   },
+  components: { Footer },
 };
 </script>
 

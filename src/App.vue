@@ -8,18 +8,12 @@
       <router-link to="/exp">Experiences</router-link>
     </div>
     <router-view />
-    <div>
-      <FooterVue class="mt-24" />
-    </div>
   </div>
 </template>
 
 <script>
-import FooterVue from "./components/Footer.vue";
 export default {
-  components: {
-    FooterVue,
-  },
+  components: {},
 };
 </script>
 
