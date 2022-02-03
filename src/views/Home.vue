@@ -34,6 +34,7 @@
           <a
             href="https://drive.google.com/file/d/1s-9O3mnbEvLFdGcSacjCsFVjrKiG-KHb/view?usp=sharing"
             target="_blank"
+            rel="noreferrer"
             >Télécharger mon cv en Pdf</a
           >
         </div>
