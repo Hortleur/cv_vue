@@ -32,7 +32,7 @@
           class="mt-8 text-xl font-semibold bg-cvLightCyan w-1/2 mx-auto p-2 rounded hover:bg-cvLightLime"
         >
           <a
-            href="https://drive.google.com/file/d/1s-9O3mnbEvLFdGcSacjCsFVjrKiG-KHb/view?usp=sharing"
+            href="https://drive.google.com/file/d/10LvxwSSqywk8gplTZA2xhQ9KrDdokl8W/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
             >Télécharger mon cv en Pdf</a
